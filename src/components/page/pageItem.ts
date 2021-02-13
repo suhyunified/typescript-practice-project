@@ -6,9 +6,13 @@ export interface Composable {
 
 type OnCloseListener = () => void;
 
+export interface SectionContainer extends Component, Composable {
+  setOnCloseListener(listener: OnCloseListener): void;
+}
+
 export class PageItemComponent
   extends BaseComponent<HTMLElement>
-  implements Composable {
+  implements SectionContainer {
   private closeListener?: OnCloseListener;
   constructor() {
     const innerHTML = `<li class="page-item">
