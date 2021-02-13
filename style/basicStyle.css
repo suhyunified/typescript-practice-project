@@ -80,6 +80,7 @@ body {
     flex: 1;
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
     grid-auto-rows: max-content;
 }
 
@@ -154,7 +155,6 @@ body {
     align-items: center;
     color: white;
     min-height: 100px;
-
 }
 
 /* todo css */
@@ -188,7 +188,6 @@ body {
 }
 
 .todo__item-label{
-
     font-size: 15px;
     color: white;
 }
