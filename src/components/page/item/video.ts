@@ -25,7 +25,7 @@ export class VideoComponent extends BaseComponent<HTMLElement> {
 
     const iframeElement = this.element.querySelector(
       ".video__thumbnail"
-    )! as HTMLEmbedElement;
+    )! as HTMLIFrameElement;
 
     iframeElement.src = video.url;
   }

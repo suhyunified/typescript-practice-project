@@ -9,7 +9,8 @@ export class BaseComponent<T extends HTMLElement> implements Component {
   protected readonly element: T;
 
   constructor(htmlString: string) {
-    const template = document.createElement("tempalte");
+    const template = document.createElement("section");
+    //console.log(template);
     template.innerHTML = htmlString;
     this.element = template.firstElementChild! as T;
   }
