@@ -73,7 +73,10 @@ body {
 }
 
 .board{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    column-gap: 20px;
+    align-items: flex-start;
     flex: 1;
     height: 100%;
     width: 100%;
